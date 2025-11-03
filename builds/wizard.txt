@@ -1,0 +1,7 @@
+name=Brandon's Build
+version=1.0
+url=https://github.com/lizenbca/MyKodiBuild/raw/main/builds/MyKodiBuild_v1.zip
+buildtype=Full
+description=Private Kodi build for Android TV via Open Wizard.
+adult=no
+theme=no
