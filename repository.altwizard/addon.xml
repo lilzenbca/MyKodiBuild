@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.altwizard" name="ALT Wizard Repository" version="1.0.0" provider-name="lilzenbca">
+    <extension point="xbmc.addon.repository"
+               name="ALT Wizard Repository"
+               info="https://raw.githubusercontent.com/lilzenbca/MyKodiBuild/main/repository.altwizard/addons.xml"
+               checksum="https://raw.githubusercontent.com/lilzenbca/MyKodiBuild/main/repository.altwizard/addons.xml.md5"
+               datadir="https://raw.githubusercontent.com/lilzenbca/MyKodiBuild/main/repository.altwizard/zips/"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>ALT Wizard Repository</summary>
+        <description>This repository installs and updates the ALT Wizard add-on and future ALT add-ons automatically.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
