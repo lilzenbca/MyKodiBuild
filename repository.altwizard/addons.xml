@@ -1,16 +1,16 @@
 <addons>
-<addon id="plugin.program.altwizard" name="[COLOR limegreen]ALT[/COLOR] Wizard" version="1.0.0" provider-name="lilzenbca">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.service" library="startup.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <summary>[COLOR limegreen]ALT[/COLOR] Wizard</summary>
-        <description>Private build manager and maintenance tool for Kodi builds via GitHub.</description>
-        <platform>all</platform>
-    </extension>
-</addon>
+    <addon id="plugin.program.altwizard"
+           name="[COLOR limegreen]ALT[/COLOR] Wizard"
+           version="1.0.0"
+           provider-name="lilzenbca">
+        <extension point="xbmc.python.pluginsource" library="default.py">
+            <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.service" library="startup.py" start="startup" />
+        <extension point="xbmc.addon.metadata">
+            <summary>[COLOR limegreen]ALT[/COLOR] Wizard</summary>
+            <description>Private Kodi build installer and maintenance tool.</description>
+            <platform>all</platform>
+        </extension>
+    </addon>
 </addons>
