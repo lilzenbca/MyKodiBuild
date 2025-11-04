@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.altwizard" name="ALT Wizard" version="1.0.0" provider-name="lilzenbca">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" optional="true" />
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.service" library="service.py" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">ALT Wizard is a lightweight and fast build installer designed for Kodi 19+ Matrix and Nexus. Built and maintained by lilzenbca, it allows private and public builds to be installed, updated, and maintained easily.</summary>
+        <description lang="en_GB">Kodi Wizard by lilzenbca for managing and installing custom builds. Inspired by several open-source wizards including OpenWizard and Simple 19.</description>
+        <disclaimer lang="en_GB">This add-on does not host or provide any content. It is a build manager and maintenance utility only.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <forum></forum>
+        <website>https://lilzenbca.github.io/MyKodiBuild/</website>
+        <email></email>
+        <source>https://github.com/lilzenbca/MyKodiBuild</source>
+
+        <news>
+1.0.0 - Initial release of ALT Wizard.
+ - Forked and restructured for simplicity and performance.
+ - Updated for Python 3 and Kodi 19–21 compatibility.
+ - Integrated with private build hosting via GitHub.
+ - Added lightweight auto-update and backup framework.
+ - New uservar.py support for custom remote build lists.
+        </news>
+
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+            <banner></banner>
+            <clearlogo></clearlogo>
+            <screenshot></screenshot>
+        </assets>
+    </extension>
+</addon>

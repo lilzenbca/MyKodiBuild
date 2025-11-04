@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.altwizard" name="ALT Wizard Repo" version="1.0" provider-name="lilzenbca">
+    <extension point="xbmc.addon.repository" name="ALT Wizard Repo">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/lilzenbca/MyKodiBuild/main/repository.altwizard/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/lilzenbca/MyKodiBuild/main/repository.altwizard/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/lilzenbca/MyKodiBuild/main/repository.altwizard/zips/</datadir>
+        </dir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>ALT Wizard Repo</summary>
+        <description>Official ALT Wizard Repository — provides updates for the ALT Wizard and future add-ons.</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

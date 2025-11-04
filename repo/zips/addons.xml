@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+
+    <!-- ===================== ALT WIZARD REPOSITORY ===================== -->
+    <addon id="repository.altwizard" name="ALT Wizard Repo" version="1.0" provider-name="lilzenbca">
+        <extension point="xbmc.addon.repository" name="ALT Wizard Repo">
+            <dir>
+                <info compressed="false">https://raw.githubusercontent.com/lilzenbca/MyKodiBuild/main/repository.altwizard/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/lilzenbca/MyKodiBuild/main/repository.altwizard/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/lilzenbca/MyKodiBuild/main/repository.altwizard/zips/</datadir>
+            </dir>
+        </extension>
+
+        <extension point="xbmc.addon.metadata">
+            <summary>ALT Wizard Repo</summary>
+            <description>Official ALT Wizard Repository — provides automatic updates for the ALT Wizard add-on and future builds.</description>
+            <disclaimer></disclaimer>
+            <platform>all</platform>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
+
+    <!-- ===================== ALT WIZARD PROGRAM ADD-ON ===================== -->
+    <addon id="plugin.program.altwizard" name="ALT Wizard" version="1.0.0" provider-name="lilzenbca">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0" />
+            <import addon="script.module.requests" optional="true" />
+        </requires>
+
+        <extension point="xbmc.python.pluginsource" library="addon.py">
+            <provides>executable</provides>
+        </extension>
+
+        <extension point="xbmc.service" library="service.py" />
+
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en_GB">ALT Wizard is a lightweight and fast build installer for Kodi 19+ Matrix and Nexus. Built and maintained by lilzenbca, it allows private and public builds to be installed, updated, and maintained easily.</summary>
+            <description lang="en_GB">Kodi Wizard for managing and installing custom builds. Inspired by OpenWizard and Simple19Wizard. Designed for performance, simplicity, and GitHub integration.</description>
+            <disclaimer lang="en_GB">This Add-on does not host or distribute content. It is a utility for installing and maintaining custom Kodi builds.</disclaimer>
+            <language>en</language>
+            <platform>all</platform>
+            <license>GPL-2.0-or-later</license>
+            <forum></forum>
+            <website>https://lilzenbca.github.io/MyKodiBuild/</website>
+            <email></email>
+            <source>https://github.com/lilzenbca/MyKodiBuild</source>
+
+            <news>
+1.0.0 - Initial release of ALT Wizard.
+ - Forked and optimized for Kodi Matrix and Nexus.
+ - Built for use with private GitHub build hosting.
+ - Updated UI and startup service.
+ - Lightweight codebase based on Python 3 framework.
+            </news>
+
+            <assets>
+                <icon>resources/icon.png</icon>
+                <fanart>resources/fanart.jpg</fanart>
+                <banner></banner>
+                <clearlogo></clearlogo>
+                <screenshot></screenshot>
+            </assets>
+        </extension>
+    </addon>
+
+</addons>
